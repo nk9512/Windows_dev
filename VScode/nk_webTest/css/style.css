@@ -20,12 +20,12 @@
 /*CSSカスタムプロパティ（サイト全体を一括管理する為の設定）
 ---------------------------------------------------------------------------*/
 :root {
-	--text-color: #bcb4a7;
+	--text-color: #a7bcaa;
 	/*テキストカラー*/
 
-	--primary-color: #f0ebe3;
+	--primary-color: #b3d8b6;
 	/*テンプレートのメインとなる色*/
-	--primary-text-color: #a79981;
+	--primary-text-color: #5db866;
 	/*メインカラーの上で使うテキスト色*/
 
 	--global-space: 5vw;
