@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="Ja">
+
+<head>
+    <meta charset="UTF-8">
+    <title>
+        専門店D科特設サイト - 岐阜高専高専祭
+    </title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div in="container">
+        <header>
+            <div id="menubar" class="hedder_bg">
+                <nav>
+                    <ul>
+                        <li><a>HOME</a></li>
+                        <li><a>PROJECTS</a>
+                            <ul>
+                                <li><a>3Dペン</a></li>
+                                <li><a>追従ドローン</a></li>
+                                <li><a>デジタルファッション</a></li>
+                                <li><a>オリジナルチケット</a></li>
+                            </ul>
+                        </li>
+                        <li><a>COMPANY</a></li>
+                        <li><a href="database.html">DATABASE</a></li>
+                    </ul>
+                </nav>
+
+                <div class="sh">小さな端末でのみ表示させたいコンテンツがあればここに入れます。</div>
+
+            </div>
+            <!--/#menubar-->
+        </header>
+
+        <section>
+            <div id="maincontains">
+                <main>
+
+                    <figure><img src="images/shirokuma.jpg" class="ws"></figure>
+                    <!--figureタグのスケールをいじる方法をググる-->
+                    <!-- そんなものはない -->
+                    <!-- imgタグの中でwidthをいじればいけそう．class="ws"ででっかくしてる -->
+                </main>
+                <div in="content">
+                    <h1 class="c">
+                        <!-- class="c" で文字をcenterに -->
+                        <!-- style.cssの1090行あたりで定義 -->
+                        高専祭 電子制御工学科ブースへようこそ！！
+                    </h1>
+                </div>
+            </div>
+            <h2 class="c">
+                <span class="fade-in-text"> 岐阜高専とは？ </span>
+            </h2>
+            <figure class="c"><img src="images/suyama.jpg" class="ws"></figure>
+            <p>
+                ロボコンって怖いね
+            </p>
+        </section>
+
+    </div>
+
+    <!-- jsファイルの読み込み -->
+    <!-- これをやっておくとclass="fade-in-text"とかが使える．便利すぎ -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/protonet-jquery.inview/1.1.2/jquery.inview.min.js"></script>
+    <script src="js/jquery.inview_set.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
