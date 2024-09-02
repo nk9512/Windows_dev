@@ -270,4 +270,6 @@ $(function () {
         slides.eq(nextIndex).css('opacity', 1).addClass('active');
         currentIndex = nextIndex;
     }, 4000); // 4秒ごとにスライドを切り替える
+
 });
+
