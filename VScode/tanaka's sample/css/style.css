@@ -1176,20 +1176,29 @@ animationの行の「0.05s」が文字の出現のなめらかさで、大きい
 
 }
 
+/*文字囲いの円*/
 .circle {
-    position: relative;/* ←文字の親要素に指定 */
-    width: 700px;
+    position: relative; /*←文字の親要素に指定*/
+	display: inline-block; 
+    width: 750px;
     height: 200px; 
     background-color: green;
     border-radius: 50%; 
     margin: 0 auto;
     text-align: center;
 }
-.circle-inner {
+.circle span {
+	font-size: 32px;
+}
+.circle span.small {
+	font-size: 20px;
+}
+/*.circle-inner {
     position: absolute;
     top:  35%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-}
+}*/
+
 /*追加指定ここまで*/
