@@ -7,6 +7,7 @@
         専門店D科特設サイト - 岐阜高専高専祭
     </title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/ticket.css">
 </head>
 
 <body>
@@ -49,12 +50,14 @@
                 </div>
             </div>
             <h2 class="c">
-                <span class="fade-in-text"> 岐阜高専とは？ </span>
+                <span class="fade-in-text">
+                    オリジナルチケット
+                </span>
             </h2>
-            <figure class="c"><img src="images/suyama.jpg" class="ws"></figure>
-            <p>
-                ロボコンって怖いね
-            </p>
+            <button id="generateButton" onclick="generateTicket()">
+                発行
+            </button>
+            <div id="ticket"></div>
         </section>
     </div>
     <!-- jsファイルの読み込み -->
@@ -63,5 +66,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/protonet-jquery.inview/1.1.2/jquery.inview.min.js"></script>
     <script src="js/jquery.inview_set.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/ticket.js"></script>
 </body>
 </html>
