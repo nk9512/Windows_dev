@@ -534,19 +534,15 @@ main h3 {
 	/*下線の幅、線種、varは色のことで、css冒頭で指定しているtext-colorを読み込みます*/
 }
 
-h4 {
-    padding: 0.8rem 0 0;
+main h4 {
+    position: relative;
+    padding: 0.5rem 0;
     margin-bottom: 0.2rem;
-    background-image: linear-gradient(135deg, #F0FF00 10%, #58CFFB 100%);
-    background-repeat: no-repeat;
-    background-size: 10% 13px;
-    background-position: bottom;
-    color: green;
-    text-align: center;
+    color: rgb(32, 93, 32);
     font-weight: bold;
     font-size: 26px;
+	border-bottom: 5px solid var(--text-color);
 }
-
 
 /*2カラム
 ---------------------------------------------------------------------------*/
@@ -1213,5 +1209,15 @@ animationの行の「0.05s」が文字の出現のなめらかさで、大きい
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
 }*/
-
+.background {
+	width: 100%;
+	height: 100vh;
+	background-image: url(https://th.bing.com/th/id/OIP.qRLjBEqcgh1EK6lFEpIUxwHaFf?w=276&h=204&c=7&r=0&o=5&dpr=1.3&pid=1.7);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	overflow-y: scroll;
+  }
+ 
 /*追加指定ここまで*/
