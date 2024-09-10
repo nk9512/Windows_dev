@@ -32,25 +32,25 @@
 
 /*１枚目画像*/
 .slide1 {
-	background: url('../images/1.png') no-repeat center center / cover;	/*１枚目の背景画像の読み込み*/
-	justify-content: center;	/*テキストブロックを中央に*/
-	text-align: center;			/*テキストをセンタリング*/
+	background: url('../images/idea\ f.png') no-repeat center center / cover;	/*１枚目の背景画像の読み込み*/
+	justify-content: flex-end;	/*テキストブロックを右寄せ*/
 }
 
 /*２枚目画像*/
 .slide2 {
-	background: url('../images/2.png') no-repeat center center / cover;	/*２枚目の背景画像の読み込み*/
+	background: url('../images/idea\ pen.png') no-repeat center center / cover;	/*２枚目の背景画像の読み込み*/
 }
 
 /*３枚目画像*/
 .slide3 {
-	background: url('../images/3.png') no-repeat center center / cover;	/*３枚目の背景画像の読み込み*/
+	background: url('../images/idea\ dr.png') no-repeat center center / cover;	/*３枚目の背景画像の読み込み*/
 	justify-content: flex-end;	/*テキストブロックを右寄せ*/
 }
 
 .slide4 {
-	background: url('../images/3.png') no-repeat center center / cover;	/*３枚目の背景画像の読み込み*/
-	justify-content: flex-end;	/*テキストブロックを右寄せ*/
+	background: url('../images/idea\ hp.png') no-repeat center center / cover;	/*３枚目の背景画像の読み込み*/
+	justify-content: center;	/*テキストブロックを中央に*/
+	text-align: center;			/*テキストをセンタリング*/
 }
 
 /*大きなテキスト*/
