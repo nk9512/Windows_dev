@@ -33,18 +33,18 @@
 /*１枚目画像*/
 .slide1 {
 	background: url('../images/idea\ f.png') no-repeat center center / cover;	/*１枚目の背景画像の読み込み*/
-	justify-content: flex-end;	/*テキストブロックを右寄せ*/
+	justify-content: flex-end;/*テキストブロックを右寄せ*/
 }
 
 /*２枚目画像*/
 .slide2 {
 	background: url('../images/idea\ pen.png') no-repeat center center / cover;	/*２枚目の背景画像の読み込み*/
+	justify-content: flex-end;/*テキストブロックを右寄せ*/
 }
 
 /*３枚目画像*/
 .slide3 {
 	background: url('../images/idea\ dr.png') no-repeat center center / cover;	/*３枚目の背景画像の読み込み*/
-	justify-content: flex-end;	/*テキストブロックを右寄せ*/
 }
 
 .slide4 {
@@ -57,6 +57,14 @@
 #mainimg h1 {
 	margin: 0;padding: 0;
 	font-size: 6vw;		/*文字サイズ。100vwは画面幅100%のことです。*/
+	line-height: 1.5;	/*行間を少し狭く*/
+	font-weight: 500;	/*文字の太さを少し太く*/
+}
+
+/*かなり大きなテキスト*/
+#mainimg h0 {
+	margin: 0;padding: 0;
+	font-size: 50vw;		/*文字サイズ。100vwは画面幅100%のことです。*/
 	line-height: 1.5;	/*行間を少し狭く*/
 	font-weight: 500;	/*文字の太さを少し太く*/
 }

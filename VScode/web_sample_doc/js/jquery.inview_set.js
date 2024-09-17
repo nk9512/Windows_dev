@@ -28,3 +28,19 @@ $('.transform3').on('inview', function() {
 $('.blur').on('inview', function() {
 	$(this).addClass('blurstyle');
 });
+
+//ここから個人
+
+document.querySelectorAll(".js-g01").forEach((item, i) => {
+  gsap.from(item, {
+    opacity: 0,
+    scale: 0,
+    yPercent: 150,
+    ease: "back",
+    duration: 0.5,
+    delay: i * 0.05
+  });
+});//できない
+
+
+
