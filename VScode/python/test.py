@@ -1,5 +1,0 @@
-print("hello world!")
-print("ここからはおなぎのエンペラータイム")
-print("nkが頑張っているよ，かわいいね")
-print("ogya-")
-print("4番センター田中です")
