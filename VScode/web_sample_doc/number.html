@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ticket Generator</title>
+    <link href="css/ticket.css" rel="stylesheet">
+</head>
+<body>
+    <h1>D科 専門展 チケット</h1>
+    <button id="generateButton" onclick="generateTicket()">発行</button>
+    <div id="ticket"></div>
+
+    <script>
+        
+        function generateTicket() {
+            const ticketNumber =  Math.floor(Math.random() * 100);
+            if(ticketNumber%2==1){
+                document.getElementById('ticket').innerHTML = 'Your Ticket Number: <span class="ticket-number1">' + 'D' +ticketNumber + '</span>';
+                document.getElementById('generateButton').disabled = true; // ボタンを無効にする
+            }else{
+                document.getElementById('ticket').innerHTML = 'Your Ticket Number: <span class="ticket-number2">' + 'D' +ticketNumber + '</span>';
+                document.getElementById('generateButton').disabled = true; // ボタンを無効にする
+            }
+        };
+    </script>
+</body>
+</html>
