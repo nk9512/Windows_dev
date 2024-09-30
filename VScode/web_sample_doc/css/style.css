@@ -1220,10 +1220,10 @@ animationの行の「0.05s」が文字の出現のなめらかさで、大きい
 	background-position: center;
 	background-attachment: fixed;
 	overflow-y: scroll;
-  }
+}
 
-  
- 
+
+
 /*追加指定ここまで*/
 	.bejyu{
 		background-color: rgba(255, 255, 255, 0.8);
