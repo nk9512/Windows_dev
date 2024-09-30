@@ -53,50 +53,6 @@
 	text-align: center;			/*テキストをセンタリング*/
 }
 
-/*3枚の画像を囲むブロック*/
-#mainimg2 {
-	width: 100%;
-	height: 0;
-	padding-top: 80%;
-	position: relative;
-}
-
-
-#mainimg2 div div {
-	width: 45vw;	/*幅。画面の45%。*/
-}
-
-/*３枚の画像の共通設定*/
-.slide {
-	width: 50%;height: 50%;
-	position: absolute;right: 0px;top: 0px;
-	display: flex;
-	align-items: center;
-	padding: 0 5vw;
-	opacity: 0;
-	transition: opacity 1s;	/*ここの1s（＝1秒）を変更すると、フェードのスピードを変更できます。*/
-}
-
-/*１枚目画像*/
-.slide1 {
-	background: url('../images/idea\ hp.png') no-repeat center center / cover;	/*１枚目の背景画像の読み込み*/
-}
-
-/*２枚目画像*/
-.slide2 {
-	background: url('../images/sample1.jpg') no-repeat center center / cover;	/*２枚目の背景画像の読み込み*/
-}
-
-/*３枚目画像*/
-.slide3 {
-	background: url('../images/sample2.jpg') no-repeat center center / cover;	/*３枚目の背景画像の読み込み*/
-}
-
-/*４枚目画像*/
-.slide4 {
-	background: url('../images/sample3.jpg') no-repeat center center / cover;	/*３枚目の背景画像の読み込み*/
-}
-
 /*大きなテキスト*/
 #mainimg h1 {
 	margin: 0;padding: 0;
