@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>アクセスカウンタ</title>
+</head>
+<body>
+    <h1>アクセスカウンタ</h1>
+    <p>このページは <span id="counter">0</span> 回訪問されました。</p>
+
+    <script>
+        // カウンタを取得して表示
+        fetch('/counter')
+            .then(response => response.json())
+            .then(data => {
+                document.getElementById('counter').textContent = data.count;
+            });
+    </script>
+</body>
+</html>
