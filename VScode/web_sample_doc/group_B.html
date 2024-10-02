@@ -1,0 +1,30 @@
+<html>
+    <h1>3Dペン</h1>
+    <div><img src="ペン画像.png" width="300" class="keyframe3 animation"></div>
+    <div class="right"><img src="ペン画像２.png" width="300"></div>
+    <style>
+        html{background: linear-gradient(90deg,rgb(255, 196, 0), yellow,rgb(97, 195, 0),
+            rgb(16, 158, 246));background-size: 400% 400%;
+            animation: GradietionAnimation 9s ease infinite;}
+            @keyframes GradietionAnimation {0%{background-position:0% 50%}
+            50%{background-position:100% 50%} 100%{background-position:0% 50%} }
+        h1{font-size:50px;text-align: center}
+        .animation{
+            animation-timing-function: ease-in-out;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            animation-duration: 1.5s;
+            width: 300px;
+        }
+        .keyframe3{
+        animation-name: anim_s;
+        transform: rotate(10deg);
+        animation-duration: 3s;
+        }
+        @keyframes anim_s {
+        50% {transform: rotate(-10deg);}
+        100% {transform: rotate(10deg);}
+        }
+        div.right{text-align: right;}
+    </style>
+</html>
