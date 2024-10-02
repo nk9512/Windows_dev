@@ -1305,3 +1305,79 @@ animationの行の「0.05s」が文字の出現のなめらかさで、大きい
 		background-color: rgba(255, 255, 255, 0.8);
 		color:#5db866;
 	}
+
+/*箱*/
+	.box{height: 400; width: 300; border: solid 3px #000000;}
+
+/*文字サイズ変更ボタン
+---------------------------------------------------------------------------*/
+/*ボタンブロック全体*/
+#f-size {
+	background: #fff;	/*背景色*/
+	box-shadow: 0px 0px 8px rgba(0,0,0,0.2);	/*影の設定。右へ、下へ、ぼかし幅。rgbaは色設定で0,0,0は黒。0.2は20%色がついた状態の事。*/
+	border-radius: 0px 0px 5px 5px;	/*角丸のサイズ。左上、右上、右下、左下への順。*/
+	display: flex;			/*横並びにする*/
+	align-items: center;	/*垂直揃えの指定。天地中央に配置されるように。*/
+	padding: 10px 15px;		/*ブロック内の余白。上下、左右へ。*/
+	align-self: flex-start;	/*headerの上に寄せる指定*/
+}
+
+	/*画面幅900px以下の追加指定*/
+	@media screen and (max-width:900px) {
+
+	#f-size {
+		display: none;	/*ボタンを非表示に*/
+	}
+
+	}/*追加指定ここまで*/
+
+/*「文字サイズ」のテキスト*/
+#f-size p {
+	margin: 0;
+	margin-right: 10px;	/*右側に空けるスペース。ボタンとの間にとるスペースです。*/
+	font-size: 17px;	/*文字サイズ*/
+}
+
+/*「小」「大」を囲むブロック*/
+#f-size ul {
+	list-style: none;margin: 0;padding: 0;
+	display: flex;			/*横並びにする*/
+	align-items: center;	/*垂直揃えの指定。天地中央に配置されるように。*/
+}
+
+/*「小」ボタン設定*/
+#f-size ul li#f-small::before {
+	display: block;
+	content: "小";		/*「小」の文字を出力*/
+	font-size: 17px;	/*文字サイズ*/
+	width: 40px;		/*幅*/
+	line-height: 40px;	/*高さ*/
+	text-align: center;	/*内容をセンタリング*/
+	background: #eee;	/*背景色*/
+}
+#f-size ul li#f-small {
+	margin-right: 5px;	/*右側に空けるスペース。「大」との間の隙間です。*/
+}
+
+/*「大」ボタン設定*/
+#f-size ul li#f-large::before {
+	display: block;
+	content: "大";		/*「大」の文字を出力*/
+	font-size: 30px;	/*文字サイズ*/
+	width: 50px;		/*幅*/
+	line-height: 50px;	/*高さ*/
+	text-align: center;	/*内容をセンタリング*/
+	background: #eee;	/*背景色*/
+}
+
+/*選択中の設定*/
+#f-size li#f-large.current::before,
+#f-size li#f-small.current::before {
+	background: var(--primary-color);	/*背景色。css冒頭で指定しているprimary-colorを読み込みます*/
+	color: var(--primary-text-color);	/*文字色。css冒頭で指定しているprimary-text-colorを読み込みます*/
+}
+
+/*マウスオン時にリンクテキストと同じような手のマークが出るように*/
+#f-size li {
+	cursor: pointer;
+}
