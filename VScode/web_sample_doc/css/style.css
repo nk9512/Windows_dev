@@ -1394,3 +1394,7 @@ html.f-small {
 #f-size li {
 	cursor: pointer;
 }
+
+	.center {
+		text-align: center;
+	  }
