@@ -97,7 +97,7 @@ body {
 
 	html,
 	body {
-		font-size: 16px;
+		font-size: 1rem;
 		/*基準となるフォントサイズ。*/
 	}
 
@@ -545,7 +545,7 @@ main h4 {
     margin-bottom: 0.2rem;
     color: rgb(32, 93, 32);
     font-weight: bold;
-    font-size: 26px;
+    font-size: 2rem;
 	border-bottom: 5px solid var(--text-color);
 }
 
@@ -1308,6 +1308,19 @@ animationの行の「0.05s」が文字の出現のなめらかさで、大きい
 
 /*箱*/
 	.box{height: 400; width: 300; border: solid 3px #000000;}
+
+/*文字サイズの設定。
+もしデフォルトを「大」にしたい場合は、js/fontSizeChanger.jsの中のコメント箇所を読んで下さい。
+---------------------------------------------------------------------------*/
+/*「大」ボタンを押した時の文字サイズ*/
+html.f-large {
+	font-size: 28px;
+}
+
+/*「小」ボタンを押した時の文字サイズ*/
+html.f-small {
+	font-size: 16px;
+}
 
 /*文字サイズ変更ボタン
 ---------------------------------------------------------------------------*/
