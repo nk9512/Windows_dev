@@ -1410,6 +1410,10 @@ html.f-small {
 		  transform: translateX(-100%);
 		  opacity: 0;
 		}
+		50% {
+			transform: translateX(-50%);
+			opacity: 0;
+		  }
 		100% {
 		  transform: translateX(0);
 		  opacity: 1;
