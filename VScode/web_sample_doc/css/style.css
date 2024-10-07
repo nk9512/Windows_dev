@@ -1195,7 +1195,7 @@ animationの行の「0.05s」が文字の出現のなめらかさで、大きい
     position: relative; /*←文字の親要素に指定*/
 	display: inline-block; 
     width: 750px;
-    height: 200px; 
+    height: 300px; 
     background-color: green;
     border-radius: 50%; 
     margin: 0 auto;
