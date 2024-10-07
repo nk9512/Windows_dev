@@ -1307,7 +1307,7 @@ animationの行の「0.05s」が文字の出現のなめらかさで、大きい
 	}
 
 /*箱*/
-	.box{height: 400; width: 300; border: solid 3px #000000;}
+	.box{height: 200; width: 200; border: solid 20px #b3d8b6;}
 
 /*文字サイズの設定。
 もしデフォルトを「大」にしたい場合は、js/fontSizeChanger.jsの中のコメント箇所を読んで下さい。
