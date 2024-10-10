@@ -1512,3 +1512,14 @@ html.f-small {
 	margin-bottom: 2rem;
 	/*下に空けるスペース。２文字分。*/
 }
+
+.float__img {
+    float: left;
+    width: 35%;
+    margin-right: 20px;
+}
+
+.float__text {
+    font-size: 18px;
+    line-height: 1.5;
+}
