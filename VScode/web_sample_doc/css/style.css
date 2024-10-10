@@ -1493,6 +1493,25 @@ html.f-small {
 		opacity: 1;
 	}
 }
+/*group_Cで使用している画像用*/
+.C-imageLeft {
+	max-width: 1000px;
+	/*最大幅*/
+	margin: 0 auto 1rem;
+	/*ブロック要素を中央に配置。下に1文字分のマージンをとる。*/
+	text-align: center;
+	/*画像が小さい場合でもセンタリングされるように*/
+}
+
+/*サムネイル全体を囲むブロック*/
+.C-imageCenter {
+	display: flex;
+	/*flexを使う指定*/
+	justify-content: center;
+	/*並びかたの種類の指定。これはセンタリングする指定。*/
+	margin-bottom: 2rem;
+	/*下に空けるスペース。２文字分。*/
+}
 
 .float__img {
     float: left;
