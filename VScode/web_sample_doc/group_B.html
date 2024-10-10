@@ -12,10 +12,14 @@
 <body>
 
     <div id="container">
+
         <header>
+
             <h1 id="logo"><a href="index.html">岐阜高専60th高専祭 4D専門展</a></h1>
+
             <!--開閉ブロック-->
             <div id="menubar">
+
                 <nav>
                     <ul>
                         <li><a href="index.html">HOME</a></li>
@@ -33,42 +37,47 @@
                         </li>
                     </ul>
                 </nav>
+
                 <div class="sh">小さな端末でのみ表示させたいコンテンツがあればここに入れます。</div>
+
             </div>
             <!--/#menubar-->
-        </header>
-        <div id="contents">
-            <main>
-                <section>
-                    <h2>3Dペン</h2>
 
+        </header>
+
+        <div id="contents">
+
+            <main>
+
+                <section>
+
+                    <h2 class="fade-in-text">3Dペン</h2>
                     <h4><span class="fade-in-text"></span>概要</span></h4>
                     <p>専用ペンを使って、立体の絵を描くことができます。 </p>
+                    <p>ボタンを押しながら空中でペンを走らせると、リアルタイムで画面上に線が表示されます。</p>
+                    <p>名前の通り、三次元で描けるペン！</p>
                     <div><img src="images/ペン画像.png" width="300" class="keyframe3 animation"></div>
+                    <h4><span class="fade-in-text"></span>方法</span></h4>
+                    <p>まず、ペン先を描きたい場所へ持っていきます。次に、ペンのボタンを押しながらペンを走らせます。ペンを動かした通りに、画面に線が表示されます。 </p>
+                    <div><img src="images/ディスプレイ.png"></div>
                     <div class="right"><img src="images/ペン画像２.png" width="300"></div>
+                    <h3><span class="fade-in-text">メンバー</span></h3>
+                    <p><span class="fade-in-text">平田雄也　竹内紀彰　宮里考希　藤井尚輝　井道匠太　糸井柑人　髙木梨聖　土方真生　長谷川大起</span></p>
                     <style>
                         .animation {
                             animation-timing-function: ease-in-out;
                             animation-iteration-count: infinite;
                             animation-direction: alternate;
                             animation-duration: 1.5s;
-                            width: 300px;
                         }
-
                         .keyframe3 {
                             animation-name: anim_s;
                             transform: rotate(10deg);
                             animation-duration: 3s;
                         }
-
                         @keyframes anim_s {
-                            50% {
-                                transform: rotate(-10deg);
-                            }
-
-                            100% {
-                                transform: rotate(10deg);
-                            }
+                            50% {transform: rotate(-10deg);}
+                            100% {transform: rotate(10deg);}
                         }
 
                         div.right {
