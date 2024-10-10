@@ -1532,3 +1532,7 @@ html.f-small {
   .practice-float .floated.right{
 	float:right;
   }
+
+.koukoku{
+	text-align: center;
+}
