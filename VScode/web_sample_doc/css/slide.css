@@ -86,3 +86,8 @@
 	pointer-events: auto; /* 表示中のスライドのみクリックを有効にする */
 }
 
+
+.slide5 {
+	background: url('../images/1.png') no-repeat center center / cover;	/*１枚目の背景画像の読み込み*/
+	justify-content: flex-end;/*テキストブロックを右寄せ*/
+}
