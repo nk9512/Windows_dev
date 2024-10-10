@@ -1493,3 +1493,14 @@ html.f-small {
 		opacity: 1;
 	}
 }
+
+.float__img {
+    float: left;
+    width: 35%;
+    margin-right: 20px;
+}
+
+.float__text {
+    font-size: 18px;
+    line-height: 1.5;
+}
