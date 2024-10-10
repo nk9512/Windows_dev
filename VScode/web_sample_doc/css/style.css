@@ -1513,13 +1513,22 @@ html.f-small {
 	/*下に空けるスペース。２文字分。*/
 }
 
-.float__img {
-    float: left;
-    width: 35%;
-    margin-right: 20px;
-}
-
-.float__text {
-    font-size: 18px;
-    line-height: 1.5;
-}
+.practice-float{
+	font-size: 30px;
+  }
+  .practice-float p{
+	background-color:#d6ffdc;
+	overflow:hidden;
+	margin:10px 0;
+	padding:5px
+  }
+  .practice-float .floated{ 
+   float:left;
+   margin-right:10px;
+   margin-bottom:10px;
+   width:200px;
+   height:200px;
+  }
+  .practice-float .floated.right{
+	float:right;
+  }
