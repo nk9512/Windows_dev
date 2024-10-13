@@ -1226,13 +1226,20 @@ animationの行の「0.05s」が文字の出現のなめらかさで、大きい
 .background {
 	width: 100%;
 	height: 100vh;
-	background-image: url(https://th.bing.com/th/id/OIP.qRLjBEqcgh1EK6lFEpIUxwHaFf?w=276&h=204&c=7&r=0&o=5&dpr=1.3&pid=1.7);
+	position: relative;
+	background-image: url(C:\Users\xiang\Desktop\専門店２\original_ticket\VScode\web_sample_doc\images\pro.png);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
 	background-attachment: fixed;
-	overflow-y: scroll;
 }
+.filter {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	background-color: rgba(0,0,0,0);
+	overflow-y: scroll;
+  }
 
 
 /*サムネイルの横スライドショー（slickを使用）
@@ -1526,8 +1533,8 @@ html.f-small {
    float:left;
    margin-right:10px;
    margin-bottom:10px;
-   width:200px;
-   height:200px;
+   width:180px;
+   height:180px;
   }
   .practice-float .floated.right{
 	float:right;
