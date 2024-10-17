@@ -1196,9 +1196,8 @@ animationの行の「0.05s」が文字の出現のなめらかさで、大きい
 }
 
 /*文字囲いの円*/
-.circle {
+/*.circle {
 	position: relative;
-	/*←文字の親要素に指定*/
 	display: inline-block;
 	width: 750px;
 	height: 300px;
@@ -1216,7 +1215,7 @@ animationの行の「0.05s」が文字の出現のなめらかさで、大きい
 	font-size: 20px;
 }
 
-/*.circle-inner {
+.circle-inner {
     position: absolute;
     top:  35%;
     left: 50%;
@@ -1546,3 +1545,5 @@ html.f-small {
 .koukoku{
 	text-align: center;
 }
+
+
