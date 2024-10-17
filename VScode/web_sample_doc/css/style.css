@@ -1573,4 +1573,31 @@ html.f-small {
 	font-size: 2em;
   }*/
 
+  .circle {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    color: white;
+    position: absolute;
+    transition: transform 1s ease;
+}
+
+#circle1 {
+    background-color: #ff5733;
+    transform: translate(-300%, -300%); /* 左上 */
+}
+
+#circle2 {
+    background-color: #33c1ff;
+    transform: translate(300%, -300%); /* 右上 */
+}
+
+#circle3 {
+    background-color: #33ff57;
+    transform: translate(0, 300%); /* 下 */
+}
 

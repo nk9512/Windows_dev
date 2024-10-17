@@ -328,3 +328,14 @@ var TxtRotate = function(el, toRotate, period) {
     css.innerHTML = ".txt-rotate > .wrap { border-right: 0.08em solid #666 }";
     document.body.appendChild(css);
   };
+
+  window.onload = function() {
+    const circles = document.querySelectorAll('.circle');
+
+    setTimeout(() => {
+        // 中央上に移動
+        circles[0].style.transform = 'translate(-75px, -75px)'; // 左上
+        circles[1].style.transform = 'translate(75px, -75px)';  // 右上
+        circles[2].style.transform = 'translate(0, 75px)';       // 下
+    }, 500); // アニメーション開始までの遅延
+};
