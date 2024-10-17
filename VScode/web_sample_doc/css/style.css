@@ -1523,6 +1523,15 @@ html.f-small {
 	/*下に空けるスペース。２文字分。*/
 }
 
+.C_background{
+	margin: 5rem 5% 0;
+	background-image: url('../images/icon_drawn.png');
+	background-size: auto;
+	background-position: left;
+	background-color:rgba(255,255,255,0.6);
+	background-blend-mode:lighten;
+}
+
 .practice-float{
 	font-size: 30px;
   }
