@@ -518,7 +518,7 @@ main h2 {
 	/*文字サイズ。基準の3倍の大きさに。*/
 	letter-spacing: 0.1em;
 	/*文字間隔を少しだけ広く*/
-	color: green;
+	color: rgb(33, 175, 33);
 	/*文字色*/
 }
 
@@ -547,7 +547,7 @@ main h4 {
 	position: relative;
 	padding: 0.5rem 0;
 	margin-bottom: 0.2rem;
-	color: rgb(32, 93, 32);
+	color: rgb(188, 240, 188);
 	font-weight: bold;
 	font-size: 2rem;
 	border-bottom: 5px solid var(--text-color);
