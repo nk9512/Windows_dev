@@ -1502,12 +1502,15 @@ html.f-small {
 }
 /*group_Cで使用している画像用*/
 .C-imageLeft {
+	width: auto;
+	/*基本幅*/
 	max-width: 1000px;
 	/*最大幅*/
-	margin: 0 auto 1rem;
-	/*ブロック要素を中央に配置。下に1文字分のマージンをとる。*/
-	text-align: center;
-	/*画像が小さい場合でもセンタリングされるように*/
+	margin: 0 5% 1rem;
+	/*ブロック要素の端を左右5%の位置へ，下に1文字分のマージンをとる。*/
+	float: left;
+	/*テキストを左寄せする指定*/
+	background: cyan;
 }
 
 /*サムネイル全体を囲むブロック*/
