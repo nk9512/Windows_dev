@@ -333,9 +333,9 @@ var TxtRotate = function(el, toRotate, period) {
     const circles = document.querySelectorAll('.circle');
 
     setTimeout(() => {
-        // 中央上に移動
+        // 最終位置を中央に配置
         circles[0].style.transform = 'translate(-75px, -75px)'; // 左上
         circles[1].style.transform = 'translate(75px, -75px)';  // 右上
-        circles[2].style.transform = 'translate(0, 75px)';       // 下
+        circles[2].style.transform = 'translate(0px, 75px)';       // 下
     }, 500); // アニメーション開始までの遅延
 };

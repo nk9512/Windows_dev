@@ -1573,6 +1573,7 @@ html.f-small {
 	font-size: 2em;
   }*/
 
+
   .circle {
     width: 100px;
     height: 100px;
@@ -1588,16 +1589,15 @@ html.f-small {
 
 #circle1 {
     background-color: #ff5733;
-    transform: translate(-300%, -300%); /* 左上 */
+    transform: translate(-150%, -150%); /* 初期位置：左上 */
 }
 
 #circle2 {
     background-color: #33c1ff;
-    transform: translate(300%, -300%); /* 右上 */
+    transform: translate(150%, -150%); /* 初期位置：右上 */
 }
 
 #circle3 {
     background-color: #33ff57;
-    transform: translate(0, 300%); /* 下 */
+    transform: translate(0, 150%); /* 初期位置：下 */
 }
-
