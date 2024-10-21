@@ -88,7 +88,7 @@ body * {
 html,
 body {
 	height: 100%;
-	font-size: 1rem;
+	font-size: 13px;
 	/*基準となるフォントサイズ。*/
 }
 
@@ -207,7 +207,6 @@ body:not(.home) #container {
 	/*子要素を縦並びにする*/
 	justify-content: space-between;
 	/*並びかたの種類の指定*/
-    align-items: center;
 }
 
 
@@ -548,18 +547,11 @@ main h4 {
 	position: relative;
 	padding: 0.5rem 0;
 	margin-bottom: 0.2rem;
-	color: rgb(38, 126, 38);
+	color: rgb(188, 240, 188);
 	font-weight: bold;
 	font-size: 2rem;
 	border-bottom: 5px solid var(--text-color);
 }
-
-h5 {
-	padding: 1rem 2rem;
-	border-left: 4px solid rgb(188, 240, 188);
-	text-align: left;
-	font-size: 1.5rem;
-  }
 
 /*2カラム
 ---------------------------------------------------------------------------*/
@@ -1247,23 +1239,6 @@ animationの行の「0.05s」が文字の出現のなめらかさで、大きい
 	background-color: rgba(0,0,0,0.5);
 	overflow-y: scroll;
   }
-
-
-/*サムネイルの横スライドショー（slickを使用）
----------------------------------------------------------------------------*/
-/*スライドショーを囲むブロック*/
-.thumbnail-slide {
-	background: #333;
-	/*背景色*/
-	padding: 20px 10px;
-	/*上下、左右へのボックス内の余白*/
-}
-
-/*各アイテム間のマージン*/
-.thumbnail-slide .slick-slide {
-	margin: 0 10px;
-	/*上下は0、左右へ10px*/
-}
 
 /*メイン画像スライドショー（slickを使用）
 ---------------------------------------------------------------------------*/
