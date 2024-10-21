@@ -1591,12 +1591,12 @@ html.f-small {
 .circle-item {
     display: flex; /* 円とテキストを横並びにする */
     align-items: center; /* 垂直方向に中央揃え */
-	gap: 30px; /* 間隔 */
+	gap: 10px; /* 間隔 */
 }
 
 .colored-square {
-    width: 220px;  /* 四角形の幅 */
-    height: 220px; /* 四角形の高さ */
+    width: 200px;  /* 円形の幅 */
+    height: 110px; /* 円形の高さ */
     background-color: rgb(188, 240, 188); /* 四角形の色 */
 	border-radius: 50%; /* 円形にする */
     position: relative; /* 画像の位置を相対的にするため */
@@ -1613,7 +1613,7 @@ html.f-small {
 }
 
 .circle-text {
-    font-size: 24px; /* テキストのサイズ */
+    font-size: 15px; /* テキストのサイズ */
     color: rgb(188, 240, 188); /* テキストの色 */
 }
 
