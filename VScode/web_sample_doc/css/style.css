@@ -88,7 +88,7 @@ body * {
 html,
 body {
 	height: 100%;
-	font-size: 13px;
+	font-size: 1rem;
 	/*基準となるフォントサイズ。*/
 }
 
@@ -207,6 +207,7 @@ body:not(.home) #container {
 	/*子要素を縦並びにする*/
 	justify-content: space-between;
 	/*並びかたの種類の指定*/
+    align-items: center;
 }
 
 
@@ -518,7 +519,7 @@ main h2 {
 	/*文字サイズ。基準の3倍の大きさに。*/
 	letter-spacing: 0.1em;
 	/*文字間隔を少しだけ広く*/
-	color: green;
+	color: rgb(33, 175, 33);
 	/*文字色*/
 }
 
@@ -547,11 +548,18 @@ main h4 {
 	position: relative;
 	padding: 0.5rem 0;
 	margin-bottom: 0.2rem;
-	color: rgb(32, 93, 32);
+	color: rgb(188, 240, 188);
 	font-weight: bold;
 	font-size: 2rem;
 	border-bottom: 5px solid var(--text-color);
 }
+
+h5 {
+	padding: 1rem 2rem;
+	border-left: 4px solid rgb(188, 240, 188);
+	text-align: left;
+	font-size: 1.5rem;
+  }
 
 /*2カラム
 ---------------------------------------------------------------------------*/
@@ -871,7 +879,7 @@ animationの行の「0.05s」が文字の出現のなめらかさで、大きい
 	font-size: 1rem;
 	text-align: center;
 	/*テキストをセンタリング*/
-	background: #f49f68 !important;
+	background: #5fb3f3 !important;
 	/*背景色*/
 	color: #fff !important;
 	/*文字色*/
@@ -1196,9 +1204,8 @@ animationの行の「0.05s」が文字の出現のなめらかさで、大きい
 }
 
 /*文字囲いの円*/
-.circle {
+/*.circle {
 	position: relative;
-	/*←文字の親要素に指定*/
 	display: inline-block;
 	width: 750px;
 	height: 300px;
@@ -1216,7 +1223,7 @@ animationの行の「0.05s」が文字の出現のなめらかさで、大きい
 	font-size: 20px;
 }
 
-/*.circle-inner {
+.circle-inner {
     position: absolute;
     top:  35%;
     left: 50%;
@@ -1226,13 +1233,20 @@ animationの行の「0.05s」が文字の出現のなめらかさで、大きい
 .background {
 	width: 100%;
 	height: 100vh;
-	background-image: url(https://th.bing.com/th/id/OIP.qRLjBEqcgh1EK6lFEpIUxwHaFf?w=276&h=204&c=7&r=0&o=5&dpr=1.3&pid=1.7);
+	position: relative;
+	background-image: url('../images/pro.png');
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
 	background-attachment: fixed;
-	overflow-y: scroll;
 }
+.filter {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	background-color: rgba(0,0,0,0.5);
+	overflow-y: scroll;
+  }
 
 
 /*サムネイルの横スライドショー（slickを使用）
@@ -1493,3 +1507,118 @@ html.f-small {
 		opacity: 1;
 	}
 }
+/*group_Cで使用している画像用*/
+.C-imageLeft {
+	width: auto;
+	/*基本幅*/
+	max-width: 1000px;
+	/*最大幅*/
+	margin: 0 5% 1rem;
+	/*ブロック要素の端を左右5%の位置へ，下に1文字分のマージンをとる。*/
+	float: left;
+	/*テキストを左寄せする指定*/
+	background: cyan;
+}
+
+/*サムネイル全体を囲むブロック*/
+.C-imageCenter {
+	display: flex;
+	/*flexを使う指定*/
+	justify-content: center;
+	/*並びかたの種類の指定。これはセンタリングする指定。*/
+	margin-bottom: 2rem;
+	/*下に空けるスペース。２文字分。*/
+}
+
+.C_background{
+	margin: 5rem 5% 0;
+	background-image: url('../images/icon_drawn.png');
+	background-size: auto;
+	background-position: left;
+	background-color:rgba(255,255,255,0.6);
+	background-blend-mode:lighten;
+}
+
+.practice-float{
+	font-size: 30px;
+  }
+  .practice-float p{
+	background-color:#d6ffdc;
+	overflow:hidden;
+	margin:10px 0;
+	padding:5px
+  }
+  .practice-float .floated{ 
+   float:left;
+   margin-right:10px;
+   margin-bottom:10px;
+   width:180px;
+   height:180px;
+  }
+  .practice-float .floated.right{
+	float:right;
+  }
+
+.koukoku{
+	text-align: center;
+}
+
+/*html,body {
+	font-family: 'Raleway', sans-serif;
+	padding: 1em 2em;
+	font-size: 18px;
+	background: #222;
+	color: #aaa
+  }
+  
+  h1,h2 {
+	font-weight: 200;
+	margin: 0.4em 0;
+  }
+  h1 { font-size: 3.5em; }
+  h2 {
+	color: #888;
+	font-size: 2em;
+  }*/
+
+
+.circle-container {
+    display: flex;
+    flex-direction: column; /* 縦に並べる */
+    gap: 60px; /* 円の間隔 */
+}
+
+.circle-item {
+    display: flex; /* 円とテキストを横並びにする */
+    align-items: center; /* 垂直方向に中央揃え */
+	gap: 30px; /* 間隔 */
+}
+
+.colored-square {
+    width: 220px;  /* 四角形の幅 */
+    height: 220px; /* 四角形の高さ */
+    background-color: rgb(188, 240, 188); /* 四角形の色 */
+	border-radius: 50%; /* 円形にする */
+    position: relative; /* 画像の位置を相対的にするため */
+    overflow: hidden; /* 四角形からはみ出した部分を隠す */
+}
+
+.colored-square img {
+    width: 77%;  /* 画像の幅を四角形に合わせる */
+    height: 77%; /* 高さは自動調整 */
+    position: absolute; /* 位置を絶対的にする */
+    top: 50%; /* 中央に配置 */
+    left: 50%; /* 中央に配置 */
+    transform: translate(-50%, -50%); /* 中央揃え */
+}
+
+.circle-text {
+    font-size: 24px; /* テキストのサイズ */
+    color: rgb(188, 240, 188); /* テキストの色 */
+}
+
+.box_css{
+	width:100%;
+	margin: 1em;
+	border: solid 3px rgb(188, 240, 188);
+	}
