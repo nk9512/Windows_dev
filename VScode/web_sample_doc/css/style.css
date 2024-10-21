@@ -1622,3 +1622,7 @@ html.f-small {
 	margin: 1em;
 	border: solid 3px rgb(188, 240, 188);
 	}
+
+.forms-size{
+	font-size:30px;
+}
