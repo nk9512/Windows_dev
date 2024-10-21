@@ -207,7 +207,6 @@ body:not(.home) #container {
 	/*子要素を縦並びにする*/
 	justify-content: space-between;
 	/*並びかたの種類の指定*/
-    align-items: center;
 }
 
 
@@ -553,13 +552,6 @@ main h4 {
 	font-size: 2rem;
 	border-bottom: 5px solid var(--text-color);
 }
-
-h5 {
-	padding: 1rem 2rem;
-	border-left: 4px solid rgb(188, 240, 188);
-	text-align: left;
-	font-size: 1.5rem;
-  }
 
 /*2カラム
 ---------------------------------------------------------------------------*/
