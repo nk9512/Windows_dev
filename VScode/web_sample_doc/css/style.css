@@ -207,6 +207,7 @@ body:not(.home) #container {
 	/*子要素を縦並びにする*/
 	justify-content: space-between;
 	/*並びかたの種類の指定*/
+    align-items: center;
 }
 
 
@@ -552,6 +553,13 @@ main h4 {
 	font-size: 2rem;
 	border-bottom: 5px solid var(--text-color);
 }
+
+h5 {
+	padding: 1rem 2rem;
+	border-left: 4px solid rgb(188, 240, 188);
+	text-align: left;
+	font-size: 1.5rem;
+  }
 
 /*2カラム
 ---------------------------------------------------------------------------*/
@@ -1574,3 +1582,43 @@ html.f-small {
   }*/
 
 
+.circle-container {
+    display: flex;
+    flex-direction: column; /* 縦に並べる */
+    gap: 60px; /* 円の間隔 */
+}
+
+.circle-item {
+    display: flex; /* 円とテキストを横並びにする */
+    align-items: center; /* 垂直方向に中央揃え */
+	gap: 30px; /* 間隔 */
+}
+
+.colored-square {
+    width: 220px;  /* 四角形の幅 */
+    height: 220px; /* 四角形の高さ */
+    background-color: rgb(188, 240, 188); /* 四角形の色 */
+	border-radius: 50%; /* 円形にする */
+    position: relative; /* 画像の位置を相対的にするため */
+    overflow: hidden; /* 四角形からはみ出した部分を隠す */
+}
+
+.colored-square img {
+    width: 77%;  /* 画像の幅を四角形に合わせる */
+    height: 77%; /* 高さは自動調整 */
+    position: absolute; /* 位置を絶対的にする */
+    top: 50%; /* 中央に配置 */
+    left: 50%; /* 中央に配置 */
+    transform: translate(-50%, -50%); /* 中央揃え */
+}
+
+.circle-text {
+    font-size: 24px; /* テキストのサイズ */
+    color: rgb(188, 240, 188); /* テキストの色 */
+}
+
+.box_css{
+	width:100%;
+	margin: 1em;
+	border: solid 3px rgb(188, 240, 188);
+	}
