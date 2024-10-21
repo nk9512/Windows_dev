@@ -1600,6 +1600,7 @@ html.f-small {
 
 .forms-size{
 	font-size:30px;
+	text-decoration:none;
 	color: rgb(0, 0, 0); /* テキストの色 */
 }
 
