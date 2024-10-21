@@ -547,7 +547,7 @@ main h4 {
 	position: relative;
 	padding: 0.5rem 0;
 	margin-bottom: 0.2rem;
-	color: rgb(188, 240, 188);
+	color: rgb(38, 124, 38);
 	font-weight: bold;
 	font-size: 2rem;
 	border-bottom: 5px solid var(--text-color);
@@ -1458,7 +1458,7 @@ html.f-small {
 /*文字色*/
 .A_background,
 .A_background a {
-	color: #48755b;
+	color: #103d23;
 }
 .slide-in {
 	font-size: 30px;
@@ -1625,7 +1625,7 @@ html.f-small {
   
   .slider-track {
 	display: flex;
-	width: calc(1000px * 9); /* 9つのスライドが並ぶ幅 */
+	width: calc(1000px * 5); /* 5つのスライドが並ぶ幅 */
 	animation: scroll 25s infinite linear; /* 25秒でスライド移動 */
   }
   
@@ -1636,9 +1636,9 @@ html.f-small {
   
   @keyframes scroll {
 	0% {
-	  transform: translateX(calc(-1000px * 2));
+	  transform: translateX(calc(-1000px * 1));
 	}
 	100% {
-	  transform: translateX(calc(-1000px * 7));
+	  transform: translateX(calc(-1000px * 4));
 	}
   }
