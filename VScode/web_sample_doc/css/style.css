@@ -1600,4 +1600,15 @@ html.f-small {
 
 .forms-size{
 	font-size:30px;
+	color: rgb(0, 0, 0); /* テキストの色 */
 }
+
+.link_button {
+	font-weight: bold;/*太字に*/
+	text-decoration: none;/*下線消す*/
+	background: yellow;/*背景を水色に*/
+	color:white;/*文字を白に*/
+	padding:5px 10px;/*内側の余白*/
+	border-radius: 20px;/*角を丸くする*/
+	font-family: 'Avenir','Arial';/*フォントをいい感じに*/
+  }
