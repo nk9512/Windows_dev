@@ -56,10 +56,11 @@
                     <p>専用ペンを使って、立体の絵を描くことができます。 </p>
                     <p>ボタンを押しながら空中でペンを走らせると、リアルタイムで画面上に線が表示されます。</p>
                     <p>名前の通り、三次元で描けるペン！</p>
+                    <div><img src="images/3Dペンアイデア.png"></div>
                     <div><img src="images/ペン画像.png" width="300" class="keyframe3 animation"></div>
                     <h4><span class="fade-in-text"></span>方法</span></h4>
                     <p>まず、ペン先を描きたい場所へ持っていきます。次に、ペンのボタンを押しながらペンを走らせます。ペンを動かした通りに、画面に線が表示されます。 </p>
-                    <div><img src="images/ディスプレイ.png"></div>
+                    <div><img src="images/ディスプレイ.png" class="fade"></div>
                     <div class="right"><img src="images/ペン画像２.png" width="300"></div>
                     <h3><span class="fade-in-text">メンバー</span></h3>
                     <p><span class="fade-in-text">平田雄也　竹内紀彰　宮里考希　藤井尚輝　井道匠太　糸井柑人　髙木梨聖　土方真生　長谷川大起</span></p>
@@ -80,10 +81,36 @@
                             100% {transform: rotate(10deg);}
                         }
 
+                        .fade {
+                            transition: all 2000ms;
+                            opacity: 0;
+                            visibility: hidden;
+                            transform: translate(0px, 50px);
+                            }
+                        .fadein {
+                            opacity: 1;
+                            visibility: visible;
+                            transform: translate(0px, 0px);
+                            } 
+
                         div.right {
                             text-align: right;
                         }
                     </style>
+                    <script>
+                        (window.onload = function() {
+                          jQuery(window).scroll(function (){
+                            jQuery(".fade").each(function(){
+                              var winheight = jQuery(window).height();
+                              var posi = jQuery(this).offset().top;
+                              var scroll = jQuery(window).scrollTop();
+                              if (scroll + winheight > posi){
+                                jQuery(this).addClass("fadein");
+                              }
+                            });
+                           });
+                        })(); 
+                    </script>
 
                     <!--大きな画像を読み込む為のボックスなので削除しないで下さい-->
                     <div class="thumbnail-view-parts"></div>
@@ -94,7 +121,12 @@
             </main>
         </div>
 
-        <!--/#contents-->
+        <!--/#contents-->  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-duration: 1.5s;
+  width: 128px;
+}
         <ul id="footermenu">
             <li><a href="index.html">HOME</a></li>
             <li><a href="group_A.html">デジタルファッション</a></li>
