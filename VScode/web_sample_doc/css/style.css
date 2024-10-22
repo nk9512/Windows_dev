@@ -553,6 +553,13 @@ main h4 {
 	border-bottom: 5px solid var(--text-color);
 }
 
+main h5{
+	/*上下 左右の余白*/
+    color:rgb(188, 240, 188);
+    background: transparent;/*背景透明に*/
+    border-left: solid 5px rgb(188, 240, 188);
+
+}
 /*2カラム
 ---------------------------------------------------------------------------*/
 .main-contents {
