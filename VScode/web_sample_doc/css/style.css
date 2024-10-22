@@ -547,14 +547,14 @@ main h4 {
 	position: relative;
 	padding: 0.5rem 0;
 	margin-bottom: 0.2rem;
-	color: rgb(38, 124, 38);
+	color: rgb(188, 240, 188);
 	font-weight: bold;
 	font-size: 2rem;
 	border-bottom: 5px solid var(--text-color);
 }
 
 main h5{
-	/*上下 左右の余白*/
+	padding: 0.1em 0.1em;/*上下 左右の余白*/
     color:rgb(188, 240, 188);
     background: transparent;/*背景透明に*/
     border-left: solid 5px rgb(188, 240, 188);
@@ -1465,7 +1465,7 @@ html.f-small {
 /*文字色*/
 .A_background,
 .A_background a {
-	color: #103d23;
+	color: #48755b;
 }
 .slide-in {
 	font-size: 30px;
