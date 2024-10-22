@@ -1603,6 +1603,7 @@ html.f-small {
 	width:100%;
 	margin: 1em;
 	border: solid 3px rgb(188, 240, 188);
+	padding: 18px; /* 枠線と内容の距離を広げる */
 	}
 
 .forms-size{
