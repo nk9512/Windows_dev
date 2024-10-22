@@ -1614,15 +1614,16 @@ html.f-small {
 
 .link_button {
 	position: fixed;
-	z-index: 99999;
+	z-index: 9999;
 	bottom: 0;
 	transform: skew(-15deg);
 	right: 20px;
-	width: 15em;
-	height: 3em;
+	width: 11em;
+	height: 2.5em;
+	font-size: 20px;
 	font-weight: bold;/*太字に*/
 	text-decoration: none;/*下線消す*/
-	background: red;/*背景を水色に*/
+	background: red;/*背景を色を赤に*/
 	color:white;/*文字を白に*/
 	padding:5px 10px;/*内側の余白*/
 	font-family: 'Avenir','Arial';/*フォントをいい感じに*/
