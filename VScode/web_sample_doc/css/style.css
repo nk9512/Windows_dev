@@ -88,7 +88,7 @@ body * {
 html,
 body {
 	height: 100%;
-	font-size: 1rem;
+	font-size: 13px;
 	/*基準となるフォントサイズ。*/
 }
 
@@ -547,7 +547,7 @@ main h4 {
 	position: relative;
 	padding: 0.5rem 0;
 	margin-bottom: 0.2rem;
-	color: rgb(188, 240, 188);
+	color: rgb(38, 124, 38);
 	font-weight: bold;
 	font-size: 2rem;
 	border-bottom: 5px solid var(--text-color);
@@ -1240,23 +1240,6 @@ animationの行の「0.05s」が文字の出現のなめらかさで、大きい
 	overflow-y: scroll;
   }
 
-
-/*サムネイルの横スライドショー（slickを使用）
----------------------------------------------------------------------------*/
-/*スライドショーを囲むブロック*/
-.thumbnail-slide {
-	background: #333;
-	/*背景色*/
-	padding: 20px 10px;
-	/*上下、左右へのボックス内の余白*/
-}
-
-/*各アイテム間のマージン*/
-.thumbnail-slide .slick-slide {
-	margin: 0 10px;
-	/*上下は0、左右へ10px*/
-}
-
 /*メイン画像スライドショー（slickを使用）
 ---------------------------------------------------------------------------*/
 /*slickの簡易チラつき対策（slick共通）*/
@@ -1475,7 +1458,7 @@ html.f-small {
 /*文字色*/
 .A_background,
 .A_background a {
-	color: #48755b;
+	color: #103d23;
 }
 .slide-in {
 	font-size: 30px;
@@ -1574,30 +1557,88 @@ html.f-small {
   }*/
 
 
-  .circle {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
+.circle-container {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 16px;
-    color: white;
-    position: absolute;
-    transition: transform 1s ease;
+    flex-direction: column; /* 縦に並べる */
+    gap: 60px; /* 円の間隔 */
 }
 
-#circle1 {
-    background-color: #ff5733;
-    transform: translate(-150%, -150%); /* 初期位置：左上 */
+.circle-item {
+    display: flex; /* 円とテキストを横並びにする */
+    align-items: center; /* 垂直方向に中央揃え */
+	gap: 10px; /* 間隔 */
 }
 
-#circle2 {
-    background-color: #33c1ff;
-    transform: translate(150%, -150%); /* 初期位置：右上 */
+.colored-square {
+    width: 200px;  /* 円形の幅 */
+    height: 110px; /* 円形の高さ */
+    background-color: rgb(188, 240, 188); /* 四角形の色 */
+	border-radius: 50%; /* 円形にする */
+    position: relative; /* 画像の位置を相対的にするため */
+    overflow: hidden; /* 四角形からはみ出した部分を隠す */
 }
 
-#circle3 {
-    background-color: #33ff57;
-    transform: translate(0, 150%); /* 初期位置：下 */
+.colored-square img {
+    width: 77%;  /* 画像の幅を四角形に合わせる */
+    height: 77%; /* 高さは自動調整 */
+    position: absolute; /* 位置を絶対的にする */
+    top: 50%; /* 中央に配置 */
+    left: 50%; /* 中央に配置 */
+    transform: translate(-50%, -50%); /* 中央揃え */
 }
+
+.circle-text {
+    font-size: 15px; /* テキストのサイズ */
+    color: rgb(188, 240, 188); /* テキストの色 */
+}
+
+.box_css{
+	width:100%;
+	margin: 1em;
+	border: solid 3px rgb(188, 240, 188);
+	}
+
+.forms-size{
+	font-size:30px;
+	text-decoration:none;
+	color: rgb(0, 0, 0); /* テキストの色 */
+}
+
+.link_button {
+	font-weight: bold;/*太字に*/
+	text-decoration: none;/*下線消す*/
+	background: yellow;/*背景を水色に*/
+	color:white;/*文字を白に*/
+	padding:5px 10px;/*内側の余白*/
+	border-radius: 20px;/*角を丸くする*/
+	font-family: 'Avenir','Arial';/*フォントをいい感じに*/
+  }
+
+/* スライダー全体のスタイル */
+.slider {
+	width: 1000px;
+	height: 600px;
+	overflow: hidden;
+	margin: 0 auto;
+	position: relative;
+  }
+  
+  .slider-track {
+	display: flex;
+	width: calc(1000px * 5); /* 5つのスライドが並ぶ幅 */
+	animation: scroll 25s infinite linear; /* 25秒でスライド移動 */
+  }
+  
+  .slider-item {
+	min-width: 1000px;
+	height: 600px;
+  }
+  
+  @keyframes scroll {
+	0% {
+	  transform: translateX(calc(-1000px * 1));
+	}
+	100% {
+	  transform: translateX(calc(-1000px * 4));
+	}
+  }
