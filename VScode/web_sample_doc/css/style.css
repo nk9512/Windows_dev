@@ -1637,7 +1637,7 @@ html.f-small {
   
 .slider-item {
 	min-width: 100vw;
-	height: 60vw;
+	height: 100vw;
   }
   
 @keyframes scroll {
