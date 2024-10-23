@@ -287,7 +287,6 @@ var TxtRotate = function(el, toRotate, period) {
     var fullTxt = this.toRotate[i];
   
     if (this.isDeleting) {
-      this.txt = fullTxt.substring(0, this.txt.length - 1);
     } else {
       this.txt = fullTxt.substring(0, this.txt.length + 1);
     }
@@ -307,6 +306,7 @@ var TxtRotate = function(el, toRotate, period) {
       this.loopNum++;
       delta = 500;
     }
+
   
     setTimeout(function() {
       that.tick();

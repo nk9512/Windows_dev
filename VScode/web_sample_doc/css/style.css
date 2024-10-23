@@ -453,7 +453,7 @@ a.ddmenu::before {
 	/*上からの配置場所指定*/
 	padding: 16px 14px;
 	/*上下、左右への余白*/
-	width: 46px;
+	width: 50px;
 	/*幅（３本バーが出ている場合の幅になります）*/
 	height: 46px;
 	/*高さ*/
@@ -470,7 +470,7 @@ a.ddmenu::before {
 	display: block;
 	transition: 0.3s;
 	/*アニメーションにかける時間。0.3秒。*/
-	border-top: 1.5px solid #333;
+	border-top: 2px solid #333;
 	/*線の幅、線種、色*/
 }
 

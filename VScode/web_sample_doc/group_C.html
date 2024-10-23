@@ -7,6 +7,114 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="追従ドローン班">
     <link rel="stylesheet" href="css/style.css">
+    <style>
+        /*h3見出し*/
+        .list-free h3 {
+            letter-spacing: 0.1em;
+            /*文字間隔を少しだけ広くする*/
+            font-size: 1.5rem;
+            /*文字サイズを150%に*/
+            color: var(--primary-inverse-color);
+            /*文字色。css冒頭で指定しているprimary-inverse-colorを読み込みます*/
+            position: relative;
+            /*カギカッコを絶対配置する為に必要な指定*/
+            padding: 0 1rem;
+            /*上下、左右へのh3内の余白*/
+            margin: 0 auto;
+            /*左右の中央に配置*/
+        }
+
+        /*bg1背景の中にあるh3*/
+        .bg1 .list-free h3 {
+            color: var(--accent-inverse-color);
+            /*文字色。css冒頭のaccent-inverse-colorを読み込みます。*/
+        }
+
+        /*h3見出しのカギカッコ装飾（共通設定）*/
+        .list-free h3::before,
+        .list-free h3::after {
+            content: "";
+            position: absolute;
+            width: 20px;
+            /*カギカッコの幅。お好みで。*/
+            height: 50px;
+            /*カギカッコの高さ。お好みで。*/
+            border: 1px solid var(--primary-inverse-color);
+            /*枠線の幅、線種、varは色の事でcss冒頭で指定しているprimary-inverse-colorを読み込みます*/
+        }
+
+        /*bg1背景の中にあるh3*/
+        .bg1 .list-free h3::before,
+        .bg1 .list-free h3::after {
+            border-color: var(--accent-inverse-color);
+            /*枠線の幅の上書き。css冒頭のaccent-inverse-colorを読み込みます*/
+        }
+
+        /*h3見出しの最初のカギカッコの設定*/
+        .list-free h3::before {
+            top: -15px;
+            /*テキストからの距離。お好みで。*/
+            left: -15px;
+            /*テキストからの距離。お好みで。*/
+            border-right: none;
+            /*右の線は消す*/
+            border-bottom: none;
+            /*下の線は消す*/
+        }
+
+        /*h3見出しの最後のカギカッコの設定*/
+        .list-free h3::after {
+            bottom: -15px;
+            /*テキストからの距離。お好みで。*/
+            right: -15px;
+            /*テキストからの距離。お好みで。*/
+            border-left: none;
+            /*左の線は消す*/
+            border-top: none;
+            /*上の線は消す*/
+        }
+
+        /*画像ブロック*/
+        .list-free .image {
+            box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.1);
+            /*ボックスの影。右へ、下へ、ぼかす量。0,0,0は黒のことで0.1は色が10%出た状態。。*/
+        }
+
+        /*画像ブロック内のdivタグ。テキストを囲むブロックです。*/
+        .list-free .image>div {
+            background: var(--primary-inverse-color);
+            /*背景色。css冒頭で指定しているprimary-inverse-colorを読み込みます*/
+            color: var(--primary-color);
+            /*文字色。css冒頭で指定しているprimary-colorを読み込みます*/
+            font-size: 0.7rem;
+            /*文字サイズを70%*/
+            padding: 1rem 2rem;
+
+            /*上下、左右への余白*/
+            /*その他（汎用向け）お好みでもっと追加して使ってもOK*/
+            .list-free .w1 {
+                width: 30%;
+            }
+            .list-free .w2 {
+                width: 50%;
+            }
+            .list-free .order1 {
+                order: 1;
+            }
+            .list-free .order2 {
+                order: 2;
+            }
+            .list-free .order3 {
+                order: 3;
+            }
+            .list-free .mt1 {
+                margin-top: 10vw;
+            }
+            .list-free .mt2 {
+                margin-top: 20vw;
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -58,6 +166,12 @@
                         ドローンは去年の4Dも挑戦した難題で，飛ばして空中を舞うだけでも非常に高度な設計と制御能力が求められます．
                     </p>
                 </div>
+                <div>
+                    <h3 class="fade-in-text">作業</h3>
+                    <div>
+
+                    </div>
+                </div>
             </main>
         </div>
         <!--ページの上部へ戻るボタン-->
@@ -80,10 +194,10 @@
                     Design:Template-Party》</a></span>
         </footer>
 
-        
+
         <!--開閉ボタン（ハンバーガーアイコン）-->
         <div id="menubar_hdr">
-        <span></span><span></span><span></span>
+            <span></span><span></span><span></span>
         </div>
         <!--jQueryの読み込み-->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
