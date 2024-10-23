@@ -12,6 +12,8 @@
 	height: 0;
 	padding-top: 80%;
 	position: relative;
+	height: 200; width: 200; border: solid 20px #b3d8b6;
+
 }
 
 /*３セットのスライドショーを囲むそれぞれのブロック*/
@@ -33,7 +35,8 @@
 /*１枚目画像*/
 .slide1 {
 	background: url('../images/idea\ f.png') no-repeat center center / cover;	/*１枚目の背景画像の読み込み*/
-	justify-content: flex-end;/*テキストブロックを右寄せ*/
+	justify-content: center;	/*テキストブロックを中央に*/
+	text-align: center;			/*テキストをセンタリング*/
 }
 
 /*２枚目画像*/
@@ -49,9 +52,9 @@
 
 .slide4 {
 	background: url('../images/idea\ hp.png') no-repeat center center / cover;	/*３枚目の背景画像の読み込み*/
-	justify-content: center;	/*テキストブロックを中央に*/
-	text-align: center;			/*テキストをセンタリング*/
+	justify-content: flex-end;/*テキストブロックを右寄せ*/
 }
+
 
 /*大きなテキスト*/
 #mainimg h1 {
@@ -90,4 +93,16 @@
 .slide5 {
 	background: url('../images/1.png') no-repeat center center / cover;	/*１枚目の背景画像の読み込み*/
 	justify-content: flex-end;/*テキストブロックを右寄せ*/
+}
+
+#mainimg h10 {
+	margin: 0;padding: 0;
+	font-size: 8vw;		/*文字サイズ。100vwは画面幅100%のことです。*/
+	line-height: 1.5;	/*行間を少し狭く*/
+	font-weight: 500;	/*文字の太さを少し太く*/
+}
+
+#mainimg p2 {
+	font-size: 2vw;		/*文字サイズ。100vwは画面幅100%のことです*/
+	
 }
