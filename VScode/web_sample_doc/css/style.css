@@ -1674,6 +1674,7 @@ html.f-small {
 	position: absolute;
 	top: 0;
 	left: 0;
+	border-radius: 10px;
 	content: "";
 	display: block;
 	width: 100%;
