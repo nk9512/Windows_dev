@@ -7,114 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="追従ドローン班">
     <link rel="stylesheet" href="css/style.css">
-    <style>
-        /*h3見出し*/
-        .list-free h3 {
-            letter-spacing: 0.1em;
-            /*文字間隔を少しだけ広くする*/
-            font-size: 1.5rem;
-            /*文字サイズを150%に*/
-            color: var(--primary-inverse-color);
-            /*文字色。css冒頭で指定しているprimary-inverse-colorを読み込みます*/
-            position: relative;
-            /*カギカッコを絶対配置する為に必要な指定*/
-            padding: 0 1rem;
-            /*上下、左右へのh3内の余白*/
-            margin: 0 auto;
-            /*左右の中央に配置*/
-        }
-
-        /*bg1背景の中にあるh3*/
-        .bg1 .list-free h3 {
-            color: var(--accent-inverse-color);
-            /*文字色。css冒頭のaccent-inverse-colorを読み込みます。*/
-        }
-
-        /*h3見出しのカギカッコ装飾（共通設定）*/
-        .list-free h3::before,
-        .list-free h3::after {
-            content: "";
-            position: absolute;
-            width: 20px;
-            /*カギカッコの幅。お好みで。*/
-            height: 50px;
-            /*カギカッコの高さ。お好みで。*/
-            border: 1px solid var(--primary-inverse-color);
-            /*枠線の幅、線種、varは色の事でcss冒頭で指定しているprimary-inverse-colorを読み込みます*/
-        }
-
-        /*bg1背景の中にあるh3*/
-        .bg1 .list-free h3::before,
-        .bg1 .list-free h3::after {
-            border-color: var(--accent-inverse-color);
-            /*枠線の幅の上書き。css冒頭のaccent-inverse-colorを読み込みます*/
-        }
-
-        /*h3見出しの最初のカギカッコの設定*/
-        .list-free h3::before {
-            top: -15px;
-            /*テキストからの距離。お好みで。*/
-            left: -15px;
-            /*テキストからの距離。お好みで。*/
-            border-right: none;
-            /*右の線は消す*/
-            border-bottom: none;
-            /*下の線は消す*/
-        }
-
-        /*h3見出しの最後のカギカッコの設定*/
-        .list-free h3::after {
-            bottom: -15px;
-            /*テキストからの距離。お好みで。*/
-            right: -15px;
-            /*テキストからの距離。お好みで。*/
-            border-left: none;
-            /*左の線は消す*/
-            border-top: none;
-            /*上の線は消す*/
-        }
-
-        /*画像ブロック*/
-        .list-free .image {
-            box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.1);
-            /*ボックスの影。右へ、下へ、ぼかす量。0,0,0は黒のことで0.1は色が10%出た状態。。*/
-        }
-
-        /*画像ブロック内のdivタグ。テキストを囲むブロックです。*/
-        .list-free .image>div {
-            background: var(--primary-inverse-color);
-            /*背景色。css冒頭で指定しているprimary-inverse-colorを読み込みます*/
-            color: var(--primary-color);
-            /*文字色。css冒頭で指定しているprimary-colorを読み込みます*/
-            font-size: 0.7rem;
-            /*文字サイズを70%*/
-            padding: 1rem 2rem;
-
-            /*上下、左右への余白*/
-            /*その他（汎用向け）お好みでもっと追加して使ってもOK*/
-            .list-free .w1 {
-                width: 30%;
-            }
-            .list-free .w2 {
-                width: 50%;
-            }
-            .list-free .order1 {
-                order: 1;
-            }
-            .list-free .order2 {
-                order: 2;
-            }
-            .list-free .order3 {
-                order: 3;
-            }
-            .list-free .mt1 {
-                margin-top: 10vw;
-            }
-            .list-free .mt2 {
-                margin-top: 20vw;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="css/groupC.css">
 </head>
 
 <body>
@@ -167,11 +60,27 @@
                     </p>
                 </div>
                 <div>
-                    <h3 class="fade-in-text">作業</h3>
-                    <div>
-
+                    <h4 class="fade-in-text">作業</h4>
+                    <div class="list-free">
+                        <h3 class="order1">実験機</h3>
+                        <div class="text order2">
+                            <p>
+                                夏休み中に撮影したものです<br>
+                            </p>
+                        </div>
+                        <div class="image w2 order3">
+                            <img src="images/drawn_wip.jpeg" alt="">
+                            <div>
+                                <p>まだモーターの出力を確認している段階で，飛ばす事はできません<br>
+                                    ここで確認したデータを元に飛べるドローンを設計します
+                                </p>
+                            </div>
+                        </div>
                     </div>
                 </div>
+                <h3><span class="fade-in-text">メンバー</span></h3>
+                <p><span>鷲見深凪　須山大樹　松永凌　後藤健斗　中嶋優太　南波寛人<br>
+                    中島琢登　川島楽翔　松浦幸紀　大野ことは　AMIGO FALENTCYA</span></p>
             </main>
         </div>
         <!--ページの上部へ戻るボタン-->

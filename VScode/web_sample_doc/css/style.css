@@ -1631,21 +1631,21 @@ html.f-small {
   
 .slider-track {
 	display: flex;
-	width: calc(1000px * 5); /* 5つのスライドが並ぶ幅 */
+	width: calc(100vw * 5); /* 5つのスライドが並ぶ幅 */
 	animation: scroll 25s infinite linear; /* 25秒でスライド移動 */
   }
   
 .slider-item {
-	min-width: 1000px;
-	height: 600px;
+	min-width: 100vw;
+	height: 100vw;
   }
   
 @keyframes scroll {
 	0% {
-	  transform: translateX(calc(-1000px * 1));
+	  transform: translateX(calc(-100vw * 1));
 	}
 	100% {
-	  transform: translateX(calc(-1000px * 4));
+	  transform: translateX(calc(-100vw * 4));
 	}
   }
 
