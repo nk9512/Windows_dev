@@ -560,6 +560,17 @@ main h5{
     border-left: solid 5px rgb(188, 240, 188);
 
 }
+
+main h7 {
+	position: relative;
+	padding: 0.5rem 0;
+	margin-bottom: 0.2rem;
+	color: rgb(45, 117, 45);
+	font-weight: bold;
+	font-size: 2rem;
+	border-bottom: 5px solid var(--text-color);
+}
+
 /*2カラム
 ---------------------------------------------------------------------------*/
 .main-contents {
@@ -1613,25 +1624,23 @@ html.f-small {
 
 /* スライダー全体のスタイル */
 .slider {
-	width: 50px;
-	height: 30px;
 	overflow: hidden;
 	margin: 0 auto;
 	position: relative;
   }
   
-  .slider-track {
+.slider-track {
 	display: flex;
 	width: calc(1000px * 5); /* 5つのスライドが並ぶ幅 */
 	animation: scroll 25s infinite linear; /* 25秒でスライド移動 */
   }
   
-  .slider-item {
+.slider-item {
 	min-width: 1000px;
 	height: 600px;
   }
   
-  @keyframes scroll {
+@keyframes scroll {
 	0% {
 	  transform: translateX(calc(-1000px * 1));
 	}
