@@ -1340,7 +1340,7 @@ ul.slick-dots li.slick-active button {
 }
 
 /*箱*/
-	.box{height: 200; width: 200; border: solid 20px #b3d8b6;}
+.box{height: 200; width: 200; border: solid 20px #b3d8b6;}
 
 /*文字サイズの設定。
 もしデフォルトを「大」にしたい場合は、js/fontSizeChanger.jsの中のコメント箇所を読んで下さい。
