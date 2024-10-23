@@ -140,6 +140,7 @@
 #mainimg p {
 	font-size: 1.4vw;		/*文字サイズ。100vwは画面幅100%のことです*/
 	padding-left: 0.5rem;	/*左に空ける余白。0.5文字分。*/
+
 }
 
 
@@ -161,12 +162,12 @@
 
 #mainimg h10 {
 	margin: 0;padding: 0;
-	font-size: 8vw;		/*文字サイズ。100vwは画面幅100%のことです。*/
-	line-height: 1.5;	/*行間を少し狭く*/
+	font-size: 7vw;		/*文字サイズ。100vwは画面幅100%のことです。*/
+	line-height: 0.8;	/*行間を少し狭く*/
 	font-weight: 500;	/*文字の太さを少し太く*/
 }
 
 #mainimg p2 {
 	font-size: 2vw;		/*文字サイズ。100vwは画面幅100%のことです*/
-	
+	line-height: 0.95;
 }
