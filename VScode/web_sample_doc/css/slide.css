@@ -12,6 +12,8 @@
 	height: 0;
 	padding-top: 80%;
 	position: relative;
+	height: 200; width: 200; border: solid 20px #b3d8b6;
+
 }
 
 /*３セットのスライドショーを囲むそれぞれのブロック*/
@@ -32,26 +34,91 @@
 
 /*１枚目画像*/
 .slide1 {
-	background: url('../images/idea\ f.png') no-repeat center center / cover;	/*１枚目の背景画像の読み込み*/
-	justify-content: flex-end;/*テキストブロックを右寄せ*/
+	background: url('../images/idea.f2.jpg') no-repeat center center 
+	/ cover;	/*１枚目の背景画像の読み込み*/
+	justify-content: center;	/*テキストブロックを中央に*/
+	text-align: center;			/*テキストをセンタリング*/
+}
+.slide1::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.5); /* 透明度を設定するオーバーレイ。rgbaで透明度を設定 */
+    z-index: 1; /* オーバーレイを背景画像の上に配置 */
+}
+
+.slide1 > * {
+    position: relative;
+    z-index: 2;  /* テキストなどがオーバーレイよりも上に表示されるように */
 }
 
 /*２枚目画像*/
 .slide2 {
-	background: url('../images/idea\ pen.png') no-repeat center center / cover;	/*２枚目の背景画像の読み込み*/
+	background: url('../images/idea.pen2.jpg') no-repeat center center
+	 / cover;	/*２枚目の背景画像の読み込み*/
 	justify-content: flex-end;/*テキストブロックを右寄せ*/
+}
+.slide2::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.5); /* 透明度を設定するオーバーレイ。rgbaで透明度を設定 */
+    z-index: 1; /* オーバーレイを背景画像の上に配置 */
+}
+
+.slide2 > * {
+    position: relative;
+    z-index: 2;  /* テキストなどがオーバーレイよりも上に表示されるように */
 }
 
 /*３枚目画像*/
 .slide3 {
-	background: url('../images/idea\ dr.png') no-repeat center center / cover;	/*３枚目の背景画像の読み込み*/
+	background: url('../images/idea.dr2.png') no-repeat center center / cover;	/*３枚目の背景画像の読み込み*/
+}
+
+.slide3::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.5); /* 透明度を設定するオーバーレイ。rgbaで透明度を設定 */
+    z-index: 1; /* オーバーレイを背景画像の上に配置 */
+}
+
+.slide3 > * {
+    position: relative;
+    z-index: 2;  /* テキストなどがオーバーレイよりも上に表示されるように */
 }
 
 .slide4 {
-	background: url('../images/idea\ hp.png') no-repeat center center / cover;	/*３枚目の背景画像の読み込み*/
-	justify-content: center;	/*テキストブロックを中央に*/
-	text-align: center;			/*テキストをセンタリング*/
+	background: url('../images/idea.hp.jpg') no-repeat center center / cover;	/*３枚目の背景画像の読み込み*/
+	justify-content: flex-end;/*テキストブロックを右寄せ*/
 }
+
+.slide4::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.5); /* 透明度を設定するオーバーレイ。rgbaで透明度を設定 */
+    z-index: 1; /* オーバーレイを背景画像の上に配置 */
+}
+
+.slide4 > * {
+    position: relative;
+    z-index: 2;  /* テキストなどがオーバーレイよりも上に表示されるように */
+}
+
 
 /*大きなテキスト*/
 #mainimg h1 {
@@ -73,6 +140,7 @@
 #mainimg p {
 	font-size: 1.4vw;		/*文字サイズ。100vwは画面幅100%のことです*/
 	padding-left: 0.5rem;	/*左に空ける余白。0.5文字分。*/
+
 }
 
 
@@ -90,4 +158,16 @@
 .slide5 {
 	background: url('../images/1.png') no-repeat center center / cover;	/*１枚目の背景画像の読み込み*/
 	justify-content: flex-end;/*テキストブロックを右寄せ*/
+}
+
+#mainimg h10 {
+	margin: 0;padding: 0;
+	font-size: 7vw;		/*文字サイズ。100vwは画面幅100%のことです。*/
+	line-height: 0.8;	/*行間を少し狭く*/
+	font-weight: 500;	/*文字の太さを少し太く*/
+}
+
+#mainimg p2 {
+	font-size: 2vw;		/*文字サイズ。100vwは画面幅100%のことです*/
+	line-height: 0.95;
 }

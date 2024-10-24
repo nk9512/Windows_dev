@@ -88,7 +88,7 @@ body * {
 html,
 body {
 	height: 100%;
-	font-size: 1rem;
+	font-size: 13px;
 	/*基準となるフォントサイズ。*/
 }
 
@@ -207,7 +207,6 @@ body:not(.home) #container {
 	/*子要素を縦並びにする*/
 	justify-content: space-between;
 	/*並びかたの種類の指定*/
-    align-items: center;
 }
 
 
@@ -454,7 +453,7 @@ a.ddmenu::before {
 	/*上からの配置場所指定*/
 	padding: 16px 14px;
 	/*上下、左右への余白*/
-	width: 46px;
+	width: 50px;
 	/*幅（３本バーが出ている場合の幅になります）*/
 	height: 46px;
 	/*高さ*/
@@ -471,7 +470,7 @@ a.ddmenu::before {
 	display: block;
 	transition: 0.3s;
 	/*アニメーションにかける時間。0.3秒。*/
-	border-top: 1.5px solid #333;
+	border-top: 2px solid #333;
 	/*線の幅、線種、色*/
 }
 
@@ -554,12 +553,23 @@ main h4 {
 	border-bottom: 5px solid var(--text-color);
 }
 
-h5 {
-	padding: 1rem 2rem;
-	border-left: 4px solid rgb(188, 240, 188);
-	text-align: left;
-	font-size: 1.5rem;
-  }
+main h5{
+	padding: 0.1em 0.1em;/*上下 左右の余白*/
+    color:rgb(188, 240, 188);
+    background: transparent;/*背景透明に*/
+    border-left: solid 5px rgb(188, 240, 188);
+
+}
+
+main h7 {
+	position: relative;
+	padding: 0.5rem 0;
+	margin-bottom: 0.2rem;
+	color: rgb(45, 117, 45);
+	font-weight: bold;
+	font-size: 2rem;
+	border-bottom: 5px solid var(--text-color);
+}
 
 /*2カラム
 ---------------------------------------------------------------------------*/
@@ -1091,7 +1101,7 @@ animationの行の「0.05s」が文字の出現のなめらかさで、大きい
 	z-index: 99;
 	position: fixed;
 	/*スクロールに追従しない(固定で表示)為の設定*/
-	right: 20px;
+	left: 20px;
 	/*右からの配置場所指定*/
 	bottom: 20px;
 	/*下からの配置場所指定*/
@@ -1248,23 +1258,6 @@ animationの行の「0.05s」が文字の出現のなめらかさで、大きい
 	overflow-y: scroll;
   }
 
-
-/*サムネイルの横スライドショー（slickを使用）
----------------------------------------------------------------------------*/
-/*スライドショーを囲むブロック*/
-.thumbnail-slide {
-	background: #333;
-	/*背景色*/
-	padding: 20px 10px;
-	/*上下、左右へのボックス内の余白*/
-}
-
-/*各アイテム間のマージン*/
-.thumbnail-slide .slick-slide {
-	margin: 0 10px;
-	/*上下は0、左右へ10px*/
-}
-
 /*メイン画像スライドショー（slickを使用）
 ---------------------------------------------------------------------------*/
 /*slickの簡易チラつき対策（slick共通）*/
@@ -1347,7 +1340,7 @@ ul.slick-dots li.slick-active button {
 }
 
 /*箱*/
-	.box{height: 200; width: 200; border: solid 20px #b3d8b6;}
+.box{height: 200; width: 200; border: solid 20px #b3d8b6;}
 
 /*文字サイズの設定。
 もしデフォルトを「大」にしたい場合は、js/fontSizeChanger.jsの中のコメント箇所を読んで下さい。
@@ -1532,9 +1525,7 @@ html.f-small {
 
 .C_background{
 	margin: 5rem 5% 0;
-	background-image: url('../images/icon_drawn.png');
-	background-size: auto;
-	background-position: left;
+	background: url('../images/tokyo.jpg') no-repeat center center / cover;	
 	background-color:rgba(255,255,255,0.6);
 	background-blend-mode:lighten;
 }
@@ -1591,12 +1582,12 @@ html.f-small {
 .circle-item {
     display: flex; /* 円とテキストを横並びにする */
     align-items: center; /* 垂直方向に中央揃え */
-	gap: 30px; /* 間隔 */
+	gap: 10px; /* 間隔 */
 }
 
 .colored-square {
-    width: 220px;  /* 四角形の幅 */
-    height: 220px; /* 四角形の高さ */
+    width: 200px;  /* 円形の幅 */
+    height: 110px; /* 円形の高さ */
     background-color: rgb(188, 240, 188); /* 四角形の色 */
 	border-radius: 50%; /* 円形にする */
     position: relative; /* 画像の位置を相対的にするため */
@@ -1613,7 +1604,7 @@ html.f-small {
 }
 
 .circle-text {
-    font-size: 24px; /* テキストのサイズ */
+    font-size: 15px; /* テキストのサイズ */
     color: rgb(188, 240, 188); /* テキストの色 */
 }
 
@@ -1621,4 +1612,89 @@ html.f-small {
 	width:100%;
 	margin: 1em;
 	border: solid 3px rgb(188, 240, 188);
+	padding: 18px; /* 枠線と内容の距離を広げる */
 	}
+
+.forms-size{
+	font-size:30px;
+	text-decoration:none;
+	color: rgb(0, 0, 0); /* テキストの色 */
+
+}
+
+/* スライダー全体のスタイル */
+.slider {
+	overflow: hidden;
+	margin: 0 auto;
+	position: relative;
+  }
+  
+.slider-track {
+	display: flex;
+	width: calc(100vw * 5); /* 5つのスライドが並ぶ幅 */
+	animation: scroll 25s infinite linear; /* 25秒でスライド移動 */
+  }
+  
+.slider-item {
+	min-width: 100vw;
+	height: 100vw;
+  }
+  
+@keyframes scroll {
+	0% {
+	  transform: translateX(calc(-100vw * 1));
+	}
+	100% {
+	  transform: translateX(calc(-100vw * 4));
+	}
+  }
+
+  .link_btn {
+	position: fixed;
+	z-index: 9999;
+	bottom: 10px;
+	right: 10px;
+	width: 11em;
+	height: 2.5em;
+	font-size: 20px;
+	border-radius: 10px;
+	display: inline-block;
+	font-weight: bold;
+	text-align: center;
+	text-decoration: none;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	outline: none;
+	color: #f00;
+	background-color: #fff;
+	border: 1px solid #f00;
+	transition: color 0.5s ease;
+  }
+
+  .link_btn:hover {
+	color: #fff;
+  }
+  .link_btn:hover::before {
+	transform: scaleX(1);
+	transform-origin: left;
+  }
+  .link_btn::before {
+	position: absolute;
+	top: 0;
+	left: 0;
+	border-radius: 10px;
+	content: "";
+	display: block;
+	width: 100%;
+	height: 100%;
+	background:#f00;
+	transform: scaleX(0);
+	transform-origin: right;
+	transition: all 0.5s ease;
+	transition-property: transform;
+  }
+  .text {
+	position: relative;
+  }
+  

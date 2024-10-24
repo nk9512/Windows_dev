@@ -1,0 +1,183 @@
+@charset "utf-8";
+
+/*画像全般の設定*/
+img {border: none;max-width: 100%;height: auto;vertical-align: middle;}
+
+/*h3見出し*/
+main h3 {
+	font-size: 1.4rem;		/*文字サイズ*/
+	letter-spacing: 0.1em;	/*文字間隔を少しだけ広くする*/
+	font-weight: normal;	/*デフォルトの太字を標準に*/
+}
+
+/*list-grid1（３カラムボックス）
+---------------------------------------------------------------------------*/
+.list-grid1 .list * {margin: 0;padding: 0;}
+
+/*ボックス１個あたり*/
+.list-grid1 .list {
+    display: grid;
+	margin-bottom: var(--global-space);	/*下に空けるスペース*/
+}
+
+/*ボックス内のp要素*/
+.list-grid1 .list p {
+	font-size: 0.85rem;	/*文字サイズを85%に*/
+	line-height: 1.5;	/*行間を狭くする*/
+}
+
+/*ボックス１個あたり*/
+.list-grid1 .list {
+	padding: 1rem;			/*ボックス内の余白。１文字分。*/
+	background: #fff;		/*背景色*/
+	color: #111;			/*文字色*/
+    grid-template-rows: auto 1fr auto;	/*１つ目（この場合はfigure要素のサイズ）と「詳しくみる」ボタンの高さは自動に、２つ目（この場合はtextブロック））を残った幅で使う*/
+	box-shadow: 5px 5px 20px rgba(0,0,0,0.1);	/*ボックスの影。右へ、下へ、ぼかし幅、0,0,0は黒の事で0.1は色が10%出た状態。*/
+}
+
+/*ボックス内のfigure画像*/
+.list-grid1 .list figure {
+	margin: -1rem;			/*画像を枠いっぱいに表示させる為に上の「.list-grid1 .list」のpadding分をネガティブマーインで指定*/
+	margin-bottom: 0.5rem;	/*画像の下に空けるスペース*/
+}
+
+	/*画面幅800px以上の追加指定*/
+	@media screen and (min-width:800px) {
+
+	/*listブロック全体を囲むブロック*/
+	.list-grid1 {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);	/*3列にする指定。4列にしたければrepeat(4, 1fr)とする。*/
+		gap: 3vw;	/*ブロックの間に空けるマージン的な指定*/
+	}
+
+	/*ボックス１個あたり*/
+	.list-grid1 .list {
+		margin-bottom: 0;	/*下に空けるスペースをなくす*/
+	}
+
+	}/*追加指定ここまで*/
+
+
+/*list-free（レイアウトフリー用）
+---------------------------------------------------------------------------*/
+.list-free * {margin: 0;padding: 0;}
+
+/*list-freeボックス*/
+.list-free {
+	display: flex;			/*直接の子要素を横並びに*/
+    flex-direction: column;	/*一旦縦並びにしておく*/
+	align-items: flex-start;/*子要素を上に揃える*/
+	margin-bottom: 10vw;	/*ボックスの下（外側）に空けるスペース*/
+	gap: 5vw;				/*子要素同士に空けるマージン的な要素。画面幅100%＝100vwです。*/
+}
+
+/*bg1背景の中にある最後のlist-freeの下マージンをなくす*/
+.bg1 .list-free:last-of-type {
+	margin-bottom: 0;
+}
+
+/*テキストブロック*/
+.list-free .text {
+    align-self: flex-start;
+	flex: 1;
+}
+
+/*h3見出し*/
+.list-free h3 {
+	letter-spacing: 0.1em;	/*文字間隔を少しだけ広くする*/
+	font-size: 1.5rem;		/*文字サイズを150%に*/
+	color: var(--primary-inverse-color);	/*文字色。css冒頭で指定しているprimary-inverse-colorを読み込みます*/
+	position: relative;	/*カギカッコを絶対配置する為に必要な指定*/
+	padding: 0 1rem;	/*上下、左右へのh3内の余白*/
+	margin: 0 auto;		/*左右の中央に配置*/
+}
+
+/*bg1背景の中にあるh3*/
+.bg1 .list-free h3 {
+	color: var(--accent-inverse-color);	/*文字色。css冒頭のaccent-inverse-colorを読み込みます。*/
+}
+
+/*h3見出しのカギカッコ装飾（共通設定）*/
+.list-free h3::before,
+.list-free h3::after {
+	content: "";
+	position: absolute;
+	width: 20px;	/*カギカッコの幅。お好みで。*/
+	height: 50px;	/*カギカッコの高さ。お好みで。*/
+	border: 1px solid var(--primary-inverse-color);	/*枠線の幅、線種、varは色の事でcss冒頭で指定しているprimary-inverse-colorを読み込みます*/
+}
+
+/*bg1背景の中にあるh3*/
+.bg1 .list-free h3::before,
+.bg1 .list-free h3::after {
+	border-color: var(--accent-inverse-color);	/*枠線の幅の上書き。css冒頭のaccent-inverse-colorを読み込みます*/
+}
+
+/*h3見出しの最初のカギカッコの設定*/
+.list-free h3::before {
+	top: -15px;		/*テキストからの距離。お好みで。*/
+	left: -15px;	/*テキストからの距離。お好みで。*/
+	border-right: none;		/*右の線は消す*/
+	border-bottom: none;	/*下の線は消す*/
+}
+
+/*h3見出しの最後のカギカッコの設定*/
+.list-free h3::after {
+	bottom: -15px;	/*テキストからの距離。お好みで。*/
+	right: -15px;	/*テキストからの距離。お好みで。*/
+	border-left: none;	/*左の線は消す*/
+	border-top: none;	/*上の線は消す*/
+}
+
+/*h4見出し*/
+.list-free h4 {
+	font-size: 1.3rem;
+	color: var(--primary-inverse-color);	/*文字色。css冒頭で指定しているprimary-inverse-colorを読み込みます*/
+	margin-bottom: 0.5em;
+}
+
+/*bg1背景の中にあるh4*/
+.bg1 .list-free h4 {
+	color: var(--accent-inverse-color);	/*文字色。css冒頭のaccent-inverse-colorを読み込みます。*/
+}
+
+/*画像ブロック*/
+.list-free .image {
+	box-shadow: 0px 10px 40px rgba(0,0,0,0.1);	/*ボックスの影。右へ、下へ、ぼかす量。0,0,0は黒のことで0.1は色が10%出た状態。。*/
+}
+
+/*画像ブロック内のdivタグ。テキストを囲むブロックです。*/
+.list-free .image > div {
+	background: var(--primary-inverse-color);	/*背景色。css冒頭で指定しているprimary-inverse-colorを読み込みます*/
+	color: var(--primary-color);				/*文字色。css冒頭で指定しているprimary-colorを読み込みます*/
+	font-size: 0.7rem;	/*文字サイズを70%*/
+	padding: 1rem 2rem;	/*上下、左右への余白*/
+}
+
+	/*画面幅600px以上の追加指定*/
+	@media screen and (min-width:600px) {
+	
+	/*list-freeボックス*/
+	.list-free {
+		flex-direction: row;	/*縦並びから横並びにする*/
+	}
+	
+	/*h3見出し*/
+	.list-free h3 {
+		writing-mode: vertical-rl;	/*縦書きの指定。*/
+		text-orientation: upright;	/*文字の向き*/
+		padding: 1rem 0.5rem;	/*上下、左右へのh3内の余白*/
+	}
+
+	/*その他（汎用向け）お好みでもっと追加して使ってもOK*/
+	.list-free .w1 {width: 30%;}
+	.list-free .w2 {width: 50%;}
+	.list-free .order1 {order: 1;}
+	.list-free .order2 {order: 2;}
+	.list-free .order3 {order: 3;}
+	.list-free .mt1 {margin-top: 10vw;}
+	.list-free .mt2 {margin-top: 20vw;}
+
+	}/*追加指定ここまで*/
+
