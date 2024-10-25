@@ -79,6 +79,7 @@ main h3 {
 
 /*テキストブロック*/
 .list-free .text {
+	margin: 0 5vw;
     align-self: flex-start;
 	flex: 1;
 }
@@ -178,6 +179,6 @@ main h3 {
 	.list-free .order3 {order: 3;}
 	.list-free .mt1 {margin-top: 10vw;}
 	.list-free .mt2 {margin-top: 20vw;}
-
+	.list-free .text {margin: 0 auto;}
 	}/*追加指定ここまで*/
 
