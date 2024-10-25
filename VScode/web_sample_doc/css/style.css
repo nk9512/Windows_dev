@@ -1652,8 +1652,8 @@ html.f-small {
   .link_btn {
 	position: fixed;
 	z-index: 9999;
-	bottom: 0;
-	right: 20px;
+	bottom: 10px;
+	right: 10px;
 	width: 11em;
 	height: 2.5em;
 	font-size: 20px;
